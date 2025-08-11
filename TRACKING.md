@@ -8,10 +8,10 @@
 ---
 
 ## **Section 1 - Trouvez une solution brute-force**
-- [ ] Définir le problème à résoudre
-- [ ] Établir la logique brute-force (sans optimisation)
-- [ ] Écrire le code de la version brute-force
-- [ ] Vérifier que l'algorithme fonctionne (tests basiques)
+- [x] Définir le problème à résoudre
+- [x] Établir la logique brute-force (sans optimisation)
+- [x] Écrire le code de la version brute-force
+- [x] Vérifier que l'algorithme fonctionne (tests basiques)
 
 ---
 
