@@ -3,7 +3,7 @@
 ## ✅ Légende
 - [ ] : Non commencé  
 - [x] : Terminé  
-- [~] : En cours  
+- [W] : En cours  
 
 ---
 
@@ -12,6 +12,8 @@
 - [x] Établir la logique brute-force (sans optimisation)
 - [x] Écrire le code de la version brute-force
 - [x] Vérifier que l'algorithme fonctionne (tests basiques)
+- [x] Refactoring 
+- [x] Ajouter un suivi du temps d'exécution de l'algorithme
 
 ---
 
@@ -31,4 +33,4 @@
 
 ---
 
-📅 **Dernière mise à jour** : 
+📅 **Dernière mise à jour** : 12/08/2025
