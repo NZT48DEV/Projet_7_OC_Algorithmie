@@ -1,8 +1,6 @@
 import csv
 import itertools
 import time
-from pprint import pprint
-
 
 BUDGET_MAX = 500
 FILE_PATH = "actions.csv"
@@ -11,11 +9,9 @@ FILE_PATH = "actions.csv"
 def load_csv(file_path, delimiter=";"):
     """
     Charge un fichier CSV et retourne les lignes (sans l'en-tête).
-    
     Args:
         file_path (str): Chemin du fichier CSV.
         delimiter (str): Délimiteur de colonnes.
-    
     Returns:
         list[list[str]]: Liste de lignes (chaque ligne est une liste de colonnes).
     """
@@ -23,8 +19,6 @@ def load_csv(file_path, delimiter=";"):
     try:
         with open(file_path, "r", encoding="utf-8-sig") as file:
             reader = csv.reader(file, delimiter=delimiter)
-            headers = next(reader)
-            # print(f"Colonnes : {headers}")
             rows = list(reader)
     except FileNotFoundError:
         print(f"[ERREUR] Fichier introuvable : {file_path}")
@@ -60,7 +54,6 @@ def parse_actions(rows):
 def find_combinations(actions, budget):
     """
     Trouve toutes les combinaisons valides d'actions en respectant le budget.
-    
     Args:
         actions (list[tuple]): Liste des actions (nom, coût, profit).
         budget (float): Budget maximum.
@@ -96,9 +89,8 @@ def display_top_combinations(combinations, limit=10):
 
     for rank, (combo, cost, profit) in enumerate(top_combos, start=1):
         names = [a[0] for a in combo]
-        
         if limit == 1:
-            print(f"\n[Meilleure combinaison d'actions] :")
+            print("\n[Meilleure combinaison d'actions] :")
         else:
             print(f"\n [Top {rank} des combinaisons d'actions] :")
 
