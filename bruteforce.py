@@ -112,7 +112,7 @@ if __name__ == "__main__":
     print(f"\nNombre total de combinaisons possibles : {total_combos}")
     print(f"Nombre de combinaisons valides (<= {BUDGET_MAX}€) : {len(valid_combos)}")
 
-    display_top_combinations(valid_combos, limit=10)
+    display_top_combinations(valid_combos, limit=1)
 
     global_elapsed = time.time() - global_start
     print(f"\n[Chrono GLOBAL] Durée totale d'exécution : {global_elapsed:.4f} secondes")
